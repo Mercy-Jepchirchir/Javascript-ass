@@ -26,7 +26,7 @@ console.log(student.calculateFruitCost());
 // getTotalCost( ) method. 
 // kioskCalc.getTotalCost( )  // returns “2 orange for KES 60”
 class KioskCalc {
-    constructor(fruitName, quantity, fruitsPriceList) {
+    constructor(fruitName, quantity) {
         this.fruitName = fruitName;
         this.quantity = quantity;
         this.fruitsPriceList = {
@@ -35,7 +35,7 @@ class KioskCalc {
             "avocado": 40
         },
             this.getAllTotalCost = function () {
-                return `${this.quantity}  ${this.fruitName} for KES ${this.quantity * this.fruitsPriceList.mango}`
+                return `${this.quantity}  ${this.fruitName} for KES ${this.quantity * this.fruitsPriceList[fruitName]}`
             }
     }
 }
