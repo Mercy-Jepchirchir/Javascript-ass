@@ -3,16 +3,7 @@
 // requested (2) and return total cost in this printed format (2 Oranges for KES 
 // 60.00). 
 // calculateFruitCost(fruitName, quantity)
-// For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.00
-calculatePurchaseFromKiosk = {
-    name: "oranges",
-    price: 30.00,
-    calculateFruitCost: function (fruitName, quantity) {
-        return `2 ${fruitName} for KES ${quantity * this.price}`;
-    }
-}
-console.log(calculatePurchaseFromKiosk.calculateFruitCost("Oranges", 2));
-
+// For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.0
 class fruitKiosk {
     constructor(fruitName, quantity) {
         this.fruitName = fruitName;
@@ -44,13 +35,13 @@ class KioskCalc {
             "avocado": 40
         },
             this.getAllTotalCost = function () {
-                return `${this.quantity}  ${this.fruitName} for KES ${this.quantity * this.fruitsPriceList.fruitName}`
+                return `${this.quantity}  ${this.fruitName} for KES ${this.quantity * this.fruitsPriceList.mango}`
             }
     }
 }
 
 
-var mango = new KioskCalc(mango, 2)
+var mango = new KioskCalc("mango", 2)
 console.log(mango.getAllTotalCost())
 
 
