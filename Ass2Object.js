@@ -41,7 +41,13 @@ class KioskCalc {
 }
 
 
-var mango = new KioskCalc("mango", 2)
+var mango = new KioskCalc("avocado", 2)
+console.log(mango.getAllTotalCost())
+
+var mango = new KioskCalc("orange", 2)
+console.log(mango.getAllTotalCost())
+
+var mango = new KioskCalc("mango", 3)
 console.log(mango.getAllTotalCost())
 
 
