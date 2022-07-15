@@ -113,3 +113,31 @@ function findLeapYears() {
 
 }
 findLeapYears();
+//function as values
+// it has anonymous function- are function without a name
+
+let a = function(){
+    console.log("hello");
+}
+a();
+
+//call back function
+// let num = [1,2,3,4,5,6,7,8];
+// let b =num.map (a=> x*2)
+// let c =num.map (function(x) {
+//      return x*2 })
+//     console.log();
+
+// let button = document.getElementById('button').addEventListener('click', function(e) {
+//     this.innerText = "hello";
+// });
+
+//IIFES
+
+
+(function (){
+    console.log("IIFES");
+})
+()
+
+//
